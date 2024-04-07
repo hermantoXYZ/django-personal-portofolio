@@ -226,7 +226,7 @@ urlpatterns = [
 
 [File Template HTML](https://github.com/hermantoXYZ/django-blog/tree/main/templates)
 
-![List HTMl](https://github.com/hermantoXYZ/django-blog/blob/main/screnshoots/2.JPG)
+![List HTMl](https://github.com/hermantoXYZ/django-personal-portofolio/blob/main/screnn/1.JPG)
 
 ## Page website Blog
 - http://127.0.0.1:8000/
@@ -239,12 +239,18 @@ urlpatterns = [
 - http://127.0.0.1:8000/blog/
 - http://127.0.0.1:8000/about/
 
-![List Galery](https://github.com/hermantoXYZ/django-blog/blob/main/screnshoots/3.JPG)
-![List Galery](https://github.com/hermantoXYZ/django-blog/blob/main/screnshoots/4.JPG)
-![List Galery](https://github.com/hermantoXYZ/django-blog/blob/main/screnshoots/5.JPG)
-![List Galery](https://github.com/hermantoXYZ/django-blog/blob/main/screnshoots/6.JPG)
-![List Galery](https://github.com/hermantoXYZ/django-blog/blob/main/screnshoots/7.JPG)
-![List Galery](https://github.com/hermantoXYZ/django-blog/blob/main/screnshoots/8.JPG)
+![List Galery](https://github.com/hermantoXYZ/django-personal-portofolio/blob/main/screnn/2.JPG)
+![List Galery](https://github.com/hermantoXYZ/django-personal-portofolio/blob/main/screnn/3.JPG)
+![List Galery](https://github.com/hermantoXYZ/django-personal-portofolio/blob/main/screnn/4.JPG)
+![List Galery](https://github.com/hermantoXYZ/django-personal-portofolio/blob/main/screnn/5.JPG)
+![List Galery](https://github.com/hermantoXYZ/django-personal-portofolio/blob/main/screnn/6.JPG)
+![List Galery](https://github.com/hermantoXYZ/django-personal-portofolio/blob/main/screnn/7.JPG)
+
+
+
+
+
+
 
 
 
