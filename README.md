@@ -222,7 +222,22 @@ urlpatterns = [
 
 ```
 
-## 6 Menampilkan daftar halaman di template HTML
+## 6 Buat Formulir untuk memasukan data pesanan
+> Berikut adalah contoh pendekatan dengan menggunakan formulir Django untuk formulir kontak:. Buatlah file forms.py dalam aplikasi Anda dan tambahkan formulir seperti ini:
+
+```
+# forms.py
+from django import forms
+
+class ContactForm(forms.Form):
+    name = forms.CharField(label='Your Name', max_length=100)
+    email = forms.EmailField(label='Your Email')
+    message = forms.CharField(label='Your Message', widget=forms.Textarea)
+```
+[File Forms.py](https://github.com/hermantoXYZ/django-personal-portofolio/blob/main/myapp/forms.py)
+
+
+## 7 Menampilkan daftar halaman di template HTML
 
 [File Template HTML](https://github.com/hermantoXYZ/django-personal-portofolio/tree/main/templates)
 
