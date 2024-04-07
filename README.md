@@ -130,7 +130,7 @@ admin.site.register(Blog, BlogAdmin)
 untuk memastikan, cek dashboard admin login ke 
 - http://127.0.0.1:8000/admin/ 
 
-![Admin Dashboard](https://github.com/hermantoXYZ/django-blog/blob/main/screnshoots/1.JPG)
+![Admin Dashboard](https://github.com/hermantoXYZ/django-personal-portofolio/blob/main/screnn/1.JPG)
 
 ## 4. Buat sebuah fungsi tampilan baru di views.py untuk menampilkan models.py
 
@@ -230,6 +230,22 @@ urlpatterns = [
 
 ## Page website Blog
 - http://127.0.0.1:8000/
+
+
+
+- http://127.0.0.1:8000/contact/
+- http://127.0.0.1:8000/projects/
+- http://127.0.0.1:8000/skills/
+- http://127.0.0.1:8000/blog/
+- http://127.0.0.1:8000/about/
+
+![List Galery](https://github.com/hermantoXYZ/django-blog/blob/main/screnshoots/3.JPG)
+![List Galery](https://github.com/hermantoXYZ/django-blog/blob/main/screnshoots/4.JPG)
+![List Galery](https://github.com/hermantoXYZ/django-blog/blob/main/screnshoots/5.JPG)
+![List Galery](https://github.com/hermantoXYZ/django-blog/blob/main/screnshoots/6.JPG)
+![List Galery](https://github.com/hermantoXYZ/django-blog/blob/main/screnshoots/7.JPG)
+![List Galery](https://github.com/hermantoXYZ/django-blog/blob/main/screnshoots/8.JPG)
+
 
 
 
