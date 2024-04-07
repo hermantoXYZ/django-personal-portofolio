@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "myweb/wsgi.py",
+        "src": "myporto/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
       },
