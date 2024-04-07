@@ -224,9 +224,9 @@ urlpatterns = [
 
 ## 6 Menampilkan daftar halaman di template HTML
 
-[File Template HTML](https://github.com/hermantoXYZ/django-blog/tree/main/templates)
+[File Template HTML](https://github.com/hermantoXYZ/django-personal-portofolio/tree/main/templates)
 
-![List HTMl](https://github.com/hermantoXYZ/django-personal-portofolio/blob/main/screnn/1.JPG)
+![List HTMl](https://github.com/hermantoXYZ/django-personal-portofolio/blob/main/screnn/html.JPG)
 
 ## Page website Blog
 - http://127.0.0.1:8000/
