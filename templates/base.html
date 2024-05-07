@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>{% block title %} - {% endblock %} -</title>
+</head>
+<body>
+    <div class="hero">
+        <!-- Menu Desktop -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <span class="logo-text">{% block logo_text %}  {% endblock %}</span>
+          </div>
+    
+        <button class="mobile-menu-button" onclick="toggleMobileMenu()">
+            &#9776; 
+        </button>
+    
+    {% block navbar_items %}
+    {% endblock %}
+    
+
+    {% block content %}
+    {% endblock %}
+    
+{% block footer %}
+    <!-- <footer class="footer">
+        <h2>Footer HermantoXYZ</h2>
+        <div class="border-footer"></div>
+        <div class="footer-teks">
+        <a href="{% url 'contact' %}">Contact</a><br>
+        <a href="{% url 'about' %}">About</a>
+       
+    </div>
+    <p>© 2024 HermantoXYZ LLC. All rights reserved.</p>
+    </footer> -->
+    
+    {% endblock %}
+    
+</body>
+<script src="/static/scripts.js"></script>
+</html>

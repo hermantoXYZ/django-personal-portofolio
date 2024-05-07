@@ -1,149 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/styles.css">
-    <title>Portfolio - Index</title>
-</head>
-<body>
-    <div class="hero">
-        <!-- Menu Desktop -->
-    <nav class="navbar">
-        <div class="navbar-logo">
-            <span class="logo-text">HermantoXYZ</span>
-          </div>
-    
-        <button class="mobile-menu-button" onclick="toggleMobileMenu()">
-            &#9776; 
-        </button>
-    
-        <ul class="navbar-nav">
-          <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#">About</a></li>
-          <li class="nav-item"><a href="#">Services</a></li>
-          <li class="nav-item"><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    
-      <!-- Menu Mobile  -->
-      <div class="mobile-menu" id="mobileMenu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <button class="close-button" onclick="closeMobileMenu()">
-            &#10006; <!-- Unicode character for close icon -->
-        </button>
-    </div>
-    
-    <!-- Hero Content -->
-    <div class="hero-content">
-        <h1>Inspiration, Innovation, and Interaction</h1>
-        <p>Bringing Creations to Life Through Information, Art, and Technology</p>
-        <button class="get-started-button">Get Started</button>
-        <button class="get-started-button">Contact Us</button>
-    </div>
-    </div>
-    
-    <div class="contact-hero">
-        <h1>Contact Us</h1>
-        <p>Have any questions? We'd love to hear from you. You can reach us through email, phone, or social media.</p>
-    
-        <div class="contact-info">
-            <div class="contact-item">
-                <h3>Email</h3>
-                <a href="mailto:0HjzI@example.com">padinusantara@gmail.com</a>
-            </div>
-    
-        <div class="contact-item-post">
-            <input type="text" placeholder="Nama Lengkap">
-            <input type="text" placeholder="Enter your email address">
-            <input type="text" placeholder="Nomor Telepon">
-            <input type="text" placeholder="Enter your email address">
+{% extends 'base.html' %}
+{% extends 'base.html' %}
+
+{% block title %}Judul Pagenya {% endblock %}
+{% block logo_text %}HermantoXYYY{% endblock %}
+{% block navbar_items %}
+<ul class="navbar-nav">
+    <li class="nav-item"><a href="#">Home</a></li>
+    <li class="nav-item"><a href="#">About</a></li>
+    <li class="nav-item"><a href="#">Services</a></li>
+    <li class="nav-item"><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Menu Mobile  -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+  </ul>
+  <button class="close-button" onclick="closeMobileMenu()">
+      &#10006; <!-- Unicode character for close icon -->
+  </button>
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="hero-content">
+    <h1>Inspiration, Innovation, and Interaction</h1>
+    <p>Bringing Creations to Life Through Information, Art, and Technology</p>
+    <button class="get-started-button">Get Started</button>
+    <button class="get-started-button">Contact Us</button>
+</div>
+</div>
+
+<div class="contact-hero">
+    <h1>Contact Us</h1>
+    <p>Have any questions? We'd love to hear from you. You can reach us through email, phone, or social media.</p>
+
+    <div class="contact-info">
+        <div class="contact-item">
+            <h3>Email</h3>
+            <a href="mailto:0HjzI@example.com">padinusantara@gmail.com</a>
         </div>
-        <input type="submit" value="Submit">
+
+    <div class="contact-item-post">
+        <input type="text" placeholder="Nama Lengkap">
+        <input type="text" placeholder="Enter your email address">
+        <input type="text" placeholder="Nomor Telepon">
+        <input type="text" placeholder="Enter your email address">
+    </div>
+    <input type="submit" value="Submit">
+        
+</div></div>
+
+<main>
+<section class="partners-section">
+    <h2>Trusted by Leading Companies</h2>
+    <div class="partners-grid">
+        <figure class="partner">
+            <img src="/media/logo/logo-p.svg" alt="Partner 1">
             
-    </div></div>
-    
-    <main>
-    <section class="partners-section">
-        <h2>Trusted by Leading Companies</h2>
-        <div class="partners-grid">
-            <figure class="partner">
-                <img src="/media/logo/logo-p.svg" alt="Partner 1">
-                
-            </figure>
-            <figure class="partner">
-                <img src="/media/logo/logo-p.svg" alt="Partner 1">
-                
-            </figure>
-            <!-- Tambahkan figure lainnya sesuai dengan kebutuhan -->
-        </div>
-    </section>
-    
-    <section class="partners-section-text">
-    <h3>What we padinusantara</h3>
-    <p>Select either from our set menus that give you convenience of choice or pick your goal and get a personalised plan for your goals. Great taste is always included with it. convenience of choice or pick your goal and get a personalised plan for your goals. Great taste is always included with it.</p>
-    
-
-    
-    </main>
-    
-    
-
-    
-
-    <div class="card">
-        <div class="card-header">
-            <h1>Welcome to My Portfolio</h1>
-        </div>
-        <div class="card-body">
-            <h2><a href="{% url 'projects' %}"> Project:</a></h2>
-            <ul>
-                {% for project in projects %}
-                <li>{{ project.title }} - {{ project.description }}</li>
-                {% endfor %}
-            </ul>
-        </div>
+        </figure>
+        <figure class="partner">
+            <img src="/media/logo/logo-p.svg" alt="Partner 1">
+            
+        </figure>
+        <!-- Tambahkan figure lainnya sesuai dengan kebutuhan -->
     </div>
-    
+</section>
+
+<section class="partners-section-text">
+<h3>What we padinusantara</h3>
+<p>Select either from our set menus that give you convenience of choice or pick your goal and get a personalised plan for your goals. Great taste is always included with it. convenience of choice or pick your goal and get a personalised plan for your goals. Great taste is always included with it.</p>
 
 
-    <div class="skills-container">
-        <h2><a href="{% url 'skills' %}">Skill:</a></h2>
-        <ul class="skills-list">
-            {% for skill in skills %}
-            <li>{{ skill.name }} - {{ skill.description }} ({{ skill.percentage }}%)</li>
+
+</main>
+
+
+
+
+
+<div class="card">
+    <div class="card-header">
+        <h1>Welcome to My Portfolio</h1>
+    </div>
+    <div class="card-body">
+        <h2><a href="{% url 'projects' %}"> Project:</a></h2>
+        <ul>
+            {% for project in projects %}
+            <li>{{ project.title }} - {{ project.description }}</li>
             {% endfor %}
         </ul>
     </div>
-    
-    
+</div>
 
-    <div class="blog-container">
-        <h2><a href="{% url 'blog' %}">Blog:</a></h2>
-        <ul class="blog-list">
-            {% for blog in blogs %}
-            <li><a href="{% url 'blog_detail' blog.slug %}">{{ blog.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
-    
 
-    <footer class="footer">
-        <h2>HermantoXYZ</h2>
-        <div class="border-footer"></div>
-        <div class="footer-teks">
-        <a href="{% url 'contact' %}">Contact</a><br>
-        <a href="{% url 'about' %}">About</a>
-       
-    </div>
-    <p>© 2024 HermantoXYZ LLC. All rights reserved.</p>
-    </footer>
-    
-</body>
-<script src="/static/scripts.js"></script>
-</html>
+
+<div class="skills-container">
+    <h2><a href="{% url 'skills' %}">Skill:</a></h2>
+    <ul class="skills-list">
+        {% for skill in skills %}
+        <li>{{ skill.name }} - {{ skill.description }} ({{ skill.percentage }}%)</li>
+        {% endfor %}
+    </ul>
+</div>
+
+
+
+<div class="blog-container">
+    <h2><a href="{% url 'blog' %}">Blog:</a></h2>
+    <ul class="blog-list">
+        {% for blog in blogs %}
+        <li><a href="{% url 'blog_detail' blog.slug %}">{{ blog.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
+
+{% block footer %}
+<footer>
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+</footer>
+{% endblock %}
