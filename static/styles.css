@@ -1,0 +1,482 @@
+/* Regular navbar styles */
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F1FAF9;
+    background-image: url("https://pura.ae/images/bg-pattern.png");
+    background-repeat: repeat;
+
+}
+
+.hero {
+    position: relative;
+    background-image: url("https://pura.ae/images/home-banner.jpg");
+    background-size: cover;
+    height: 700px;
+    background-position: center; /* Center the background image */
+    background-repeat: repeat; 
+    background-attachment: fixed;
+    margin-top: -100px;
+    padding-top: 130px;
+    width: 800px;
+    left: 0; /* Ensure the hero spans the full width */
+    right: 0; /* Ensure the hero spans the full width */
+    width: 100%; 
+}
+
+.navbar {
+    display: flex; /* Mengatur elemen navbar sebagai flex container */
+    margin: 0; /* Menghilangkan margin bawaan */
+    padding: 10px; /* Memberikan padding untuk navbar */
+    list-style-type: none; /* Menghilangkan bullet point pada list */
+    align-items: center; /* Mengatur item agar selalu berada di tengah secara vertikal */
+    justify-content: space-between; /* Mengatur agar item pada navbar terdistribusi secara merata */
+    background-color: #036432; /* Mengatur warna latar belakang navbar */
+    padding: 10px 20px; /* Penyesuaian padding pada navbar */
+    border-radius: 40px; /* Memberikan sudut melengkung pada navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Menambahkan shadow pada navbar */
+    font-family: 'Public Sans', sans-serif; /* Mengatur jenis font pada teks navbar */
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.navbar-logo img {
+    height: 50px; /* Mengatur tinggi logo */
+    width: 50px; /* Mengatur lebar logo */
+    /* Anda juga bisa menentukan max-width atau max-height agar logo tidak overflow */
+}
+
+.logo-text {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-logo {
+    color: #ffffff; /* Mengatur warna teks pada logo */
+    display: flex; /* Mengatur logo agar tampil dalam flex container */
+    align-items: center; /* Mengatur item agar selalu berada di tengah secara vertikal */
+    margin-left: 20px; /* Memberikan margin kiri pada logo */
+}
+
+.nav-item {
+    display: inline-block; /* Mengatur item agar tampil dalam satu baris */
+    margin-right: 15px; /* Memberikan margin kanan pada setiap item */
+}
+
+.nav-item a {
+    text-decoration: none; /* Menghilangkan dekorasi hyperlink */
+    color: #ffffff; /* Mengatur warna teks pada link */
+    padding: 10px; /* Memberikan padding pada setiap link */
+    transition: color 0.3s ease; /* Efek transisi untuk perubahan warna link */
+}
+
+.nav-item a:hover {
+    color: #000c90; /* Mengatur warna teks pada link saat dihover */
+}
+
+.mobile-menu-button {
+    display: none; /* Menyembunyikan tombol pada ukuran layar desktop */
+}
+
+
+@media (max-width: 768px) {
+    /* CSS for mobile */
+    .navbar {
+      padding: 10px; /* Penyesuaian padding untuk tampilan mobile */
+      border-radius: 50px; /* Mengubah border-radius untuk tampilan mobile */
+      box-shadow: none; /* Menghilangkan shadow pada tampilan mobile */
+    }
+  
+    .navbar-logo img {
+      height: 30px; /* Penyesuaian tinggi logo untuk tampilan mobile */
+      width: auto; /* Mengatur lebar logo agar menyesuaikan */
+    }
+  
+    .navbar-nav {
+      display: none; /* Menyembunyikan item navigasi pada tampilan mobile */
+      flex-direction: column; /* Mengatur agar item berada dalam satu kolom */
+      align-items: center; /* Mengatur agar item berada di tengah secara vertikal */
+      position: absolute; /* Menjadikan posisi absolut untuk menutupi halaman */
+      top: 60px; /* Penyesuaian posisi vertikal */
+      left: 0;
+      width: 100%;
+      background-color: #00389a; /* Mengatur warna latar belakang untuk item navigasi */
+      padding: 10px 0;
+      border-radius: 0 0 10px 10px; /* Memberikan sudut melengkung pada bawah item navigasi */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Menambahkan shadow pada item navigasi */
+    }
+  
+    .nav-item {
+      margin: 10px 0; /* Penyesuaian margin antar item navigasi untuk tampilan mobile */
+    }
+  
+    .mobile-menu-button {
+      display: block; /* Menampilkan tombol pada tampilan mobile */
+      background: none;
+      border: none;
+      color: #ffffff;
+      font-size: 20px; /* Mengatur ukuran font tombol */
+      cursor: pointer; /* Mengubah kursor saat diarahkan ke tombol */
+    }
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hide the menu by default */
+    width: 200px;
+    height: 100%;
+    background-color: #f2f9f6;
+    transition: right 0.3s ease; /* Add transition effect */
+    font-family: 'Public Sans', sans-serif;
+}
+
+.mobile-menu.active {
+    right: 0; /* Show the menu */
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu li {
+    padding: 6px;
+    margin-top: 10px;
+}
+
+.mobile-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: #00389a;
+    padding: 7px;
+    border-radius: 50px;
+   
+}
+
+.mobile-menu li a:hover {
+    color: #00389a;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px ;
+}
+
+.hero-content {
+    text-align: center; /* Align text in the center */
+    color: white; /* Set text color to white */
+    font-family: 'Public Sans', sans-serif;
+    margin-top: 200px;
+}
+
+.hero-content h1 {
+    font-size: 36px; /* Set font size for the heading */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.hero-content p {
+    font-size: 18px; /* Set font size for the paragraph */
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        margin-top: 100px; /* Add top margin */
+        margin-left: 20px; /* Add left margin */
+        margin-right: 20px; /* Add right margin */
+    }
+}
+
+.get-started-button {
+    background-color: #5e6461;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+.get-started-button:hover {
+    background-color: #ffffff; /* Darker shade of the button color on hover */
+    color: #000000;
+    border-radius: 40px;
+}
+
+
+.partners-section {
+    padding: 50px 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255 255 255 / 60%);
+    margin: 70px 100px 80px 80px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to bottom, rgb(0 102 4) 0%, rgb(0 0 0 / 0%) 150%), url(https://pura.ae/_next/static/media/cta-consultation.d14629c4.jpg);
+}
+
+
+
+.partners-section h2 {
+    margin-bottom: 30px; /* Tambahkan margin bottom untuk judul */
+}
+
+.partners-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partner {
+    margin: 20px; /* Tambahkan margin sesuai kebutuhan */
+}
+
+.partner img {
+    width: 100px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    height: 100px;
+}
+
+
+main {
+ 
+   display: block;
+   margin-top: 0%;
+   padding: 0;  
+   font-family: Arial, Helvetica, sans-serif;
+
+  
+}
+
+.contact-hero {
+    background-color: #f2f9f6;
+    padding: 50px 40px;
+    text-align: center;
+    position: relative; /* or absolute */
+    top: 0; /* or other appropriate value */
+    margin: -100px 80px 80px;
+    border-radius: 30px;
+    color: #006532;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #5e6461;
+    color: white;
+
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .contact-item-post {
+    display: block;
+    margin: 20px;
+  }
+
+  
+  .partners-section-text, h3, p {
+    margin: 20px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  h3 {
+    color: #006532;
+    font-size: 30px;
+  } 
+
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.card-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.card-header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.card-body {
+    margin-top: 20px;
+}
+
+.card-body h2 {
+    font-size: 20px;
+}
+
+.card-body ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-body ul li {
+    margin-bottom: 10px;
+}
+
+.card-body ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-body ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.skills-container {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.skills-list li::before {
+    content: "\2022"; /* Bullet point character */
+    color: #007bff; /* Bullet point color */
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.skills-list li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.skills-list li a:hover {
+    text-decoration: underline;
+}
+
+
+.blog-container {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.blog-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blog-list li {
+    margin-bottom: 10px;
+}
+
+.blog-list li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.blog-list li a:hover {
+    text-decoration: underline;
+}
+
+
+.footer {
+    background-color: #414141;
+    padding-top: 48px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    
+}
+
+.border-footer {
+  
+
+
+    border-style: dashed;
+
+    border-width: 0.5px;
+    border-color: rgba(255,255,255,0.4);
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer p {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-teks {
+    margin-top: 20px;
+    display: inline-flex;
+    margin-bottom: 20px;
+}
